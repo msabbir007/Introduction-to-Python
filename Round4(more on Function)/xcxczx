@@ -1,1 +1,57 @@
+elp text for find-method
+Open a new program file in PyCharm and define a string variable in the beginning of it.
 
+On the following line type the name of the variable followed by a period followed by find. Move the cursor on top of the word "find" (i.e. click on the word). Open the view menu from the top bar. Which one of the choices in the menu allows you to examine the documentation for the find method in such a way that links to the related documents are available (in this case links to the documentation of the str data type)?
+
+Quick Definition
+Quick Documentation
+External Documentation
+Parameter Info
+Context Info
+The difference between single and multiline comments
+Next, define a function named "fraction" which takes a few parameters, their names don't matter as this is just a test. After you finish typing the def-line and press enter to move on the next line, start the new line by typing """ (i.e. three quotation marks in a row). Then press enter again.
+
+The character combination """ begins a multiline comment which is also known as docstring comment. Docstring ends when the next """ is met in the program code. In our earlier examples we have used # to start comments but the effect in that case only lasted to the end of the line.
+
+Read from the Python's style guide (PEP 8) how different types of comments should be used. Then select all the claims below which are true:
+
+There should be a comment in the beginning of every function that I implement. This comment should, amongst other things, explain the purpose of the function.'
+When commenting a function I should prefer one line comments beginning with #.
+When commenting a function I should prefer multiline comments beginning with """.
+The comment explaining the purpose of a function should be placed before the def-line indented to the same level as letter d in def.
+The comment explaining the purpose of a function should be placed after the def-line indented to the same level as letter d in def.
+The comment explaining the purpose of a function should be placed after the def-line indented to the same level the line following word def.
+Comments beginning with # can be used to express multiline comments. In this case every line must begin with #.
+Comments beginning with # are only used to express comments which fit in one line.
+All comments (# and """) are always indented on the same level as the code they are commenting.
+Writing a docstring comment for a function
+Earlier PyCharm automatically added a template docstring-comment in the beginning of the fraction. The template automatically contains places for describing the purpose of the function, the parameters, and the return value(s).
+
+Add the description of your function on the first empty line inside the docstring. Also add the description on the parameters on the lines theor names are readily placed. Finally, enter the description of the return value.
+
+Implement the function (i.e. write the commands that describe what the function does).
+
+After the function is all ready, add a call to your function at the end of the program file and again click on the name of the function as your did with find earlier. Which of the actions under View-menu allows you to see the documentation of the function that includes the description of the parameters and the return value(s)?
+
+Quick Definition
+Quick Documentation
+External Documentation
+Parameter Info
+Context Info
+The contents of the docstring comment
+PyCharm documentation calls docstring coments by the name "Documentation Comment". No matter what they are called, they have an important purpose when commenting Python programs.
+
+Read more about commenting Python programs from style guide (PEP 257). Pay particular attention to One-line Docstrings and Multi-line Docstrings. The choose the correct statements:
+
+Single line docstring comments are not recommended.
+Docstring comment located on the beginning of a function should always begin with a one line description of the purpose of the function.
+fraction function's docstring should describe what happend if divisor is zero.
+A function doesn't need docstring comment if its name and parameters are so clearly named that it is possible to guess from them what the function does.
+General notions about what comments should contain
+The documentation you just read above mentioned in multiple places what comments in general should and should not contain. In the following multiple choice question indicate the comments which are definitely bad comments, no matter what the program is supposed to do:
+
+d = x*x + y*y # let's assign x*x+y*y into variable d
+d = x*x + y*y # let's calculate the square of the hypotenuse when the sides are known
+i += 1 # let's increment the value of i by one
+def foo(a, b)
+"""foo takes a and b as its parameters"""
